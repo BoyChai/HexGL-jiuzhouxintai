@@ -167,6 +167,9 @@ bkcore.hexgl.Gameplay.prototype.end = function(result)
 	if(result == this.results.FINISH)
 	{
 		if(this.hud != null) this.hud.display("Finish");
+		if(this.sore["m"]<2&&this.sore["h"]==0){
+			alert("Flag is not here.Plz go rankrankrank.php to get your rank.");
+		}
 		this.step = 100;
 	}
 	else if(result == this.results.DESTROYED)
